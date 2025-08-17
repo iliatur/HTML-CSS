@@ -1,13 +1,4 @@
-#main-title {
-  color: blue;
-  font-size: 20px;
-  text-align: center;
-}
-
-.content {
-  background-color: green;
-}
-
-p {
-  color: red;
+/* Заголовки новостей */
+.news article h2 {
+  font-size: 32px;
 }
