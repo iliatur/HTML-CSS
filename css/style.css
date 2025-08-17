@@ -1,4 +1,17 @@
-/* Заголовки новостей */
-.news article h2 {
-  font-size: 32px;
+
+.alert-error {
+  color: red;
+}
+
+.alert {
+  color: gray;
+}
+
+
+.form-input {
+  height: 50px;
+}
+
+textarea.form-input {
+  height: 200px;
 }
