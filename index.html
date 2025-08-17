@@ -1,74 +1,753 @@
-<header>
-  <img src="/logo.png" alt="Логотип">
-  <!-- Логотип сайта -->
-  <nav id="menu">
-    <!-- Меню -->
-    <ul>
-      <li><a href="/">Главная</a></li>
-      <li><a href="/about">О нас</a></li>
-      <li><a href="/contacts">Контакты</a></li>
-    </ul>
-  </nav>
-</header>
+<!DOCTYPE html>
+<html class='h-100' data-bs-theme='light' lang='ru' prefix='og: https://ogp.me/ns#'>
+<head>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<meta content='IE=Edge' http-equiv='X-UA-Compatible'>
+<script>
+  window.addEventListener("vite:preloadError", (event) => {
+    console.log('vite:preloadError');
+    window.location.reload(); // for example, refresh the page
+  });
+</script>
 
-<aside>
-  <div>
-    <a href="#">Необязательный пункт 1</a>
-    <a href="#">Необязательный пункт 2</a>
-    <a href="#">Необязательный пункт 3</a>
-  </div>
+<script>
+//<![CDATA[
+window.gon={};gon.fired_events={};gon.vk_id={"client_id":"51586979"};gon.yandex_id={"client_id":"88d071f1d3384eb4bd1deb37910235c7"};gon.is_bot=false;gon.applications={};gon.current_user={"id":954419,"email":"turygin_ia@mail.ru","sanitized_phone_number":"79633171804","phone_number_e164":"79633171804","username":"ilia_turygin","created_at":"2025-04-03T20:25:54.662+03:00","created_at_as_timestamp":1743701154,"last_viewed_notification_id":5333085,"paid_days_count":0,"first_name":"Ilia","last_name":"Turygin","full_name":"Ilia Turygin","birthday":null,"city":null,"country":null,"text":"turygin_ia@mail.ru (ilia_turygin)","is_guest":false,"is_mentor":false,"is_tutor":false,"is_hexlet_employee":false,"current_company":null,"can_use_paid_features":true,"current_program":"python","is_active_group_member":true,"is_active_async_group_member":false,"current_group_type":"optimal","current_group_program":"python","current_curator":{"email":"xeniya.petrova32@gmail.com","full_name":"Ксения Петрова"},"current_tutor":{"full_name":"Lyova Parsyan"},"last_event_data":{"id":35767205,"name":null,"resource_type":"Lesson::Member::Unit","resource_id":42383706,"created_at":"2025-08-16T17:20:12.426+03:00","updated_at":"2025-08-16T17:20:12.426+03:00","action":null,"event_type_id":null,"locale":"ru","kind_id":72,"perform_at":"2025-08-16T17:20:12.426+03:00","creator_id":954419},"gender":"male","finished_lessons_count":0,"url":"https://hexlet.io/u/ilia_turygin"};gon.token="gSmNhq45B0QOP2zHpjbD1k6GMKIw3oJOwq03HJGUAl7mnuEjX8DEpy6UseEY9AuYskv8hHsPgPIp93S-qMgLyg";gon.events=["blog_post_moderation_submitted","content_course_finished","course_finished","course_started","custom_payment_paid","email_confirmed","lead_created","lesson_finished","lesson_started","product_payment_paid","program_started","project_finished","project_member_review_approved","project_sent_to_review","project_started","send_to_work_chat","show_lead_modal","sign_up_failed","signed_in","signed_out","signed_up","signed_up_program_started","solution_viewed","subscription_cancelled","subscription_created","subscription_deleted","subscription_paid","subscription_price_changed","subscription_product_changed","team_created","test_event","today_birthday","tutor_assigned","tutorship_application_created","user_email_changed","user_stucked_in_group"];gon.locale="ru";gon.language="ru";gon.theme="light";gon.rails_env="production";gon.mobile=false;gon.google={"analytics_key":"UA-1360700-51","optimize_key":"GTM-5QDVFPF"};gon.captcha={"google_v3_site_key":"6LenGbgZAAAAAM7HbrDbn5JlizCSzPcS767c9vaY","yandex_site_key":"ysc1_Vyob5ZPPUdPBsu0ykt8bVFdzsfpoVjQChLGl2b4g19647a89","verification_failed":null};gon.social_signin=false;gon.typoreporter_google_form_id="1FAIpQLSeibfGq-KvWQ2Fyru-zkFFRVTLBuzXAHAoEyN1p49FtDmNoNA";gon.carrotquest={"site_id":"64033-37649a1dcf0c27a7d9f778d49b","user_hash":"684edc745fd75d1a5fee84ed2c82cf1a7de9ad4857fdcbbb9917d69ac127156f"};gon.notifications=[{"id":5446061,"url":"https://ru.hexlet.io/code_reviews/1870086","message":"Сохранили решение для \u003cb\u003eСемантический HTML\u003c/b\u003e","human_created_at":"около 18 часов назад","icon":"\u003cspan class=\"bi bi-bicycle\"\u003e\u003c/span\u003e"},{"id":5445330,"url":"https://ru.hexlet.io/code_reviews/1869567","message":"Сохранили решение для \u003cb\u003eСниппет\u003c/b\u003e","human_created_at":"2 дня назад","icon":"\u003cspan class=\"bi bi-bicycle\"\u003e\u003c/span\u003e"},{"id":5445323,"url":"https://ru.hexlet.io/code_reviews/1869561","message":"Сохранили решение для \u003cb\u003eСильный пароль\u003c/b\u003e","human_created_at":"2 дня назад","icon":"\u003cspan class=\"bi bi-bicycle\"\u003e\u003c/span\u003e"},{"id":5445318,"url":"https://ru.hexlet.io/code_reviews/1869556","message":"Сохранили решение для \u003cb\u003eОхотники за ссылками\u003c/b\u003e","human_created_at":"2 дня назад","icon":"\u003cspan class=\"bi bi-bicycle\"\u003e\u003c/span\u003e"},{"id":5445315,"url":"https://ru.hexlet.io/code_reviews/1869553","message":"Сохранили решение для \u003cb\u003eФлаги\u003c/b\u003e","human_created_at":"2 дня назад","icon":"\u003cspan class=\"bi bi-bicycle\"\u003e\u003c/span\u003e"},{"id":5445305,"url":"https://ru.hexlet.io/code_reviews/1869546","message":"Сохранили решение для \u003cb\u003eПоиск по условию\u003c/b\u003e","human_created_at":"2 дня назад","icon":"\u003cspan class=\"bi bi-bicycle\"\u003e\u003c/span\u003e"}];gon.assistant_thread_messages=[];gon.assistant_thread={"id":897952,"openai_thread_id":null,"user_id":954419,"messages_count":0,"resource_type":"Lesson::Member","created_at":"2025-08-16 17:20:51 +0300"};gon.topics=[{"creator":{"username":"user-40b4886026a4b005","public_name":"Дмитрий","id":909442,"is_tutor":false},"comments":[{"creator":{"username":"user-40b4886026a4b005","public_name":"Дмитрий","id":909442,"is_tutor":false},"id":198444,"body":"Так и не понял в чём разница между моим решением:\n\u003c!DOCTYPE html\u003e\n\u003chtml lang=\"ru\"\u003e\n\u003chead\u003e\n  \u003cmeta charset=\"UTF-8\"\u003e\n  \u003ctitle=\"Моё первое резюме верстальщика\"\u003e\n \u003c/head\u003e\n\u003cbody\u003e\n\u003ch1\u003esfsdfsdf\u003c/h1\u003e\n\u003cp\u003esfdfsdfsd xcvbxcbcv cbcxvbc\u003c/p\u003e\n\u003cp\u003esfdfsdfsd cvbcvxb cvbcvb\u003c/p\u003e\n\u003c/body\u003e\n\u003c/html\u003e\nи ответом:\n\u003c!DOCTYPE html\u003e\n\u003chtml lang=\"ru\"\u003e\n  \u003chead\u003e\n    \u003cmeta charset=\"UTF-8\"\u003e\n    \u003ctitle\u003eМоё первое резюме верстальщика\u003c/title\u003e\n  \u003c/head\u003e\n  \u003cbody\u003e\n    \u003ch1\u003eМихайлов Никита\u003c/h1\u003e\n    \u003cp\u003eЯ преподаватель и автор всех курсов по вёрстке на Хекслете\u003c/p\u003e\n    \u003cp\u003eХочу, чтобы вы полюбили вёрстку, а мои курсы доставили вам удовольствие :)\u003c/p\u003e\n  \u003c/body\u003e\n\u003c/html\u003e\nОни по структуре одинаковы!"},{"creator":{"username":"adeloid","public_name":"Ада Андрианова","id":925565,"is_tutor":false},"id":198728,"body":"Дмитрий, в вашем варианте `\u003ctitle=\"Моё первое резюме верстальщика\"\u003e`, что неверно. Текст заголовка надо помещать внутри тега `\u003ctitle\u003e`, то есть должно быть так: `\u003ctitle\u003eText\u003c/title\u003e`"}],"id":105829,"title":"Моё начало файла:\n\u003c!DOCTYPE html\u003e\n\u003chtml lang=\"ru\"\u003e\n\u003chead\u003e....\nИ первая ошибка: \n ✘  1 index.test.js:15:3 › layout tests › The HTML tag must have the lang attribute (321ms)\nКак ещё указать язык, кроме как \"\u003chtml lang=\"ru\"\u003e\"?"},{"creator":{"username":"user-0c6b09f52bd3541b","public_name":"Виктор","id":719594,"is_tutor":false},"comments":[{"creator":{"username":"dzencot","public_name":"Ivan Gagarinov","id":75907,"is_tutor":true},"id":197906,"body":"**Виктор**, браузер так устроен, что многие ошибки исправляет. Кроме того некоторые вещи действительно не обязательны. Но мы учим как делать правильно. Например, точно так же в программировании мы учим правильному форматированию кода, наименованию и т.д. — эти вещи не обязательны, интерпретатор(компилятор) спокойно обойдется без них и программа будет работать. Но в курсах мы учим следовать этим вещам."}],"id":105243,"title":"К сожалению теория неочевидно связана с упражнением и теорией прошлого урока. Самостоятельно по-экспериментировав, я понял что оказывается \u003cheader\u003e и \u003cmain\u003e вообще необязательные тэги. Неплохо бы это в конце теории добавить: \"на этом базисные элементы заканчиваются и ранее приведённые \u003cheader\u003e и \u003cmain\u003e не являются обязательными\".\n\nP.S. плюс про тэг заголовка рассказывалось лишь мимоходом."},{"creator":{"username":"user-dad3c6addd42c06e","public_name":"Сергей носачев","id":871101,"is_tutor":false},"comments":[{"creator":{"username":"vxf1913","public_name":"Игорь Пустошило","id":744978,"is_tutor":false},"id":195139,"body":"Теги `section` - лишние."},{"creator":{"username":"user-dad3c6addd42c06e","public_name":"Сергей носачев","id":871101,"is_tutor":false},"id":195140,"body":"**Игорь Пустошило**, я проверял и с ними, и без них. Но всё равно выдаёт, что в файле девять ошибок. "},{"creator":{"username":"vxf1913","public_name":"Игорь Пустошило","id":744978,"is_tutor":false},"id":195143,"body":"Тогда сохраняйте решение. Без логов тестов не понять. Как сохранить - написано вот тут:\n\nhttps://help.hexlet.ru/article/65232\n\nЕсли не получается сохранить решение, нужна техподдержка."},{"creator":{"username":"user-dad3c6addd42c06e","public_name":"Сергей носачев","id":871101,"is_tutor":false},"id":195144,"body":"**Игорь Пустошило**, спасибо за помощь. Дело оказалось в том, что title должен был быть совершенно определённый... ошибка была в этом. Спасибо ещё раз!"},{"creator":{"username":"vxf1913","public_name":"Игорь Пустошило","id":744978,"is_tutor":false},"id":195145,"body":"А, точно! Там же текст прямо в задании указан, у вас был другой. Ну классно, что разобрались :)"}],"id":102806,"title":"Не понимаю, почему не проходит вёрстка базовой структуры. Пробовал сформировать ссылку на код-ревью, но почему-то интерфейс отличается от того, что в faq. Подскажите, пожалуйста, что не так\n\n \u003c!DOCTYPE html\u003e\n    \u003chtml lang=\"ru\"\u003e\n\t    \u003chead\u003e\n\t\t    \u003ctitle\u003eМоё первое резюме\u003c/title\u003e\n\t\t    \u003cmeta charset=\"UTF-8\"\u003e\n\t    \u003c/head\u003e\n\t    \u003cbody\u003e\n\t    \u003csection\u003e\n\t\t\t    \u003ch1\u003eЗаголовок первого уровня\u003c/h1\u003e\n\t\t\t     \u003cp\u003eТекст\u003c/p\u003e\n\t\t\t    \u003cp\u003eТекст2\u003c/p\u003e\n\t\t    \u003c/section\u003e\n\t    \u003c/body\u003e\n\t    \u003c/html\u003e"},{"creator":{"username":"user-6073b15503484cd0","public_name":"Arthur","id":814491,"is_tutor":false},"comments":[{"creator":{"username":"olala","public_name":"Olga Pejenkova","id":364375,"is_tutor":true},"id":191716,"body":"**Arthur**, \n\nПриложите, пожалуйста, [код-ревью](https://help.hexlet.io/ru/articles/282174-kak-soxranit-svoe-resenie) с вашим решением. Обычно в выводе тестов можно увидеть, где именно возникает проблема."}],"id":100088,"title":"```html\n\u003c!DOCTYPE html\u003e\n\u003chtml lang=\"ru\"\u003e\n  \u003chead\u003e\n    \u003cmeta charset=\"UTF-8\"\u003e\n    \u003ctitle\u003eМоя первая страница\u003c/title\u003e\n  \u003c/head\u003e\n  \u003cbody\u003e\n    \u003c!-- removed --\u003e\n  \u003c/body\u003e\n\u003c/html\u003e\n```\nЧто не верно?"},{"creator":{"username":"moon-furor","public_name":"Константин","id":763467,"is_tutor":false},"comments":[{"creator":{"username":"elena_gromova","public_name":"Elena Gromova","id":548102,"is_tutor":true},"id":189789,"body":"**Константин**, в целом - да, но возможно ошибка на другой строчке, из-за чего html некорректно собрался) "}],"id":98444,"title":"Тесты не прошли. Давайте разбираться с самого начала...\n\nВот моя строка:\n\u003chtml lang=\"ru\"\u003e\n\nВот результат теста:\n✘  1 index.test.js:15:3 › layout tests › The HTML tag must have the lang attribute (357ms)\n\nЯ правильно понимаю, что я молодец, а тест — нет?"},{"creator":{"username":"user-b9aa600a86a270db","public_name":"Людмила","id":756455,"is_tutor":false},"comments":[{"creator":{"username":"olala","public_name":"Olga Pejenkova","id":364375,"is_tutor":true},"id":188683,"body":"**Людмила**, \n\nда :) вы можете открыть тесты и посмотреть, что ожидаются тесты для проверки - все фразы без точек."}],"id":97537,"title":"СЕрьезно ? убрала точки в конце предложений и тест пропустил мое задание . ((("},{"creator":{"username":"user-b9aa600a86a270db","public_name":"Людмила","id":756455,"is_tutor":false},"comments":[{"creator":{"username":"front_to_front","public_name":"Samat Abdyldaev","id":726842,"is_tutor":false},"id":188607,"body":"**Людмила**, \nСемантическии они два разные тега.\nВнутри \u003chead\u003e обычно содержится заголовок, ключевые слова, описание страницы и другие служебные данные и этот тег пишется до основного тега \u003cbody\u003e. \nИ как вы поняли тег \u003cheader\u003e несет семантический смысл и пишется внутри тега \u003cbody\u003e."}],"id":97528,"title":"здравствуйте , есть разница писать \u003chead\u003e или правильно писать \u003cheader\u003e?  а то везде по разному , и в задании тест не завершался пока не написала header ."},{"creator":{"username":"user-043bd50ffc07490a","public_name":"Denis","id":759468,"is_tutor":false},"comments":[{"creator":{"username":"user-0d15ad528192de5f","public_name":"Leonid Kizelshteyn","id":761011,"is_tutor":false},"id":187453,"body":"Повторение - мать учения\n\nВ процессе прохождения курса (особенно перед тестированием) часто возникает необходимость повторения урока(ов). К сожалению, \"навигация\" мало помогает и приходится  создавать новый аккаунтб чтобы попасть в нужное место курса(урока). Подскажите, пожалуйста, как можно вернуться к предыдущему уроку(ам) без таких \"сложностей\".\nДа, и кстати, о просмотре видео-материалов. После тщательного прочтения (минимум 3 раза) рекомендуемой статьи и всяческих \"танцев с бубнами\"- вызова \"добрых духов\" в виде другого браузера и т.п. действий - результат 0. Может быть создать отдельный файл с видео сюжетами и дать ссылку на что-то типа *Real Player* или *Media player* раз уж курс предназначен для Windows пользователей.\n"}],"id":96427,"title":"Хелп я полный ноль"},{"creator":{"username":"akirushk","public_name":"Анна Гуща","id":418316,"is_tutor":false},"comments":[{"creator":{"username":"user-75a8c1847dd9c378","public_name":"Александр Петров","id":723527,"is_tutor":false},"id":186653,"body":"Здравствуйте. У Вас неправильно указан Doctype. у Вас стоит просто \u003c!DOCTYPE\u003e а надо \u003c!DOCTYPE html\u003e"},{"creator":{"username":"akirushk","public_name":"Анна Гуща","id":418316,"is_tutor":false},"id":186657,"body":"Александр, большущее спасибо! Невнимательность - корень зла.)"},{"creator":{"username":"user-75a8c1847dd9c378","public_name":"Александр Петров","id":723527,"is_tutor":false},"id":186659,"body":"пожалуйста! Рад был помочь)"}],"id":95912,"title":"Добрый день! \nКод https://ru.hexlet.io/code_reviews/1271436 корректный, тест не пропускает. Прошу помочь, пожалуйста."},{"creator":{"username":"lusorich","public_name":"Eugen Mulyavka","id":182449,"is_tutor":false},"comments":[{"creator":{"username":"olala","public_name":"Olga Pejenkova","id":364375,"is_tutor":true},"id":182027,"body":"**Eugen Mulyavka**, \n\nесли у вас вопрос по коду, прикладывайте, пожалуйста, [код-ревью](https://help.hexlet.io/ru/articles/282174-kak-soxranit-svoe-resenie) с решением, так будет легко понять и разобраться с вашим вопросом.\n\nВ общем случае,  отступы в HTML не являются обязательными, так как сам язык HTML не зависит от форматирования и не учитывает пробелы и отступы. Однако их использование  в коде является хорошей практикой и может значительно повысить читаемость и структурированность кода.\n"},{"creator":{"username":"lusorich","public_name":"Eugen Mulyavka","id":182449,"is_tutor":false},"id":182144,"body":"**Olga Pejenkova**, https://ru.hexlet.io/code_reviews/1145282\n\n\nЯ понимаю, что отступы влияют только на читаемость. Хотелось бы знать является ли отсутствие доп. отступа нормой?"},{"creator":{"username":"olala","public_name":"Olga Pejenkova","id":364375,"is_tutor":true},"id":182211,"body":"**Eugen Mulyavka**, \n\nкак должен быть оформлен и структурирован код определяется в рамках каждого проекта, эта \"норма\" может отличаться от проекта к проекту. В данном случае ваш вариант успешно прошел тесты, что говорит о его допустимости и соответствии установленным требованиям."}],"id":92371,"title":"Почему в решении учителя нет дополнительного отступа внутри тега `\u003chtml\u003e`?"}];gon.topics_count=53;gon.api_topics_url="https://ru.hexlet.io/api_internal/topics/lessons";gon.resource_id=1804;
+//]]>
+</script>
+<meta charset="utf-8">
+<title>Базовая структура HTML документа | Основы современной верстки</title>
+<link rel="alternate" href="https://ru.hexlet.io/courses/layout-designer-basics/lessons/page-structure/theory_unit" hreflang="ru-RU">
+<link rel="alternate" href="https://kz.hexlet.io/courses/layout-designer-basics/lessons/page-structure/theory_unit" hreflang="ru-KZ">
+<link rel="image_src" href="https://ru.hexlet.io/vite/assets/hexlet_ru_logo_wide-zI9sMLMl.png">
+<meta property="og:site_name" content="Хекслет">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://ru.hexlet.io/vite/assets/hexlet_ru_og_logo-BTQJlhfA.png">
+<meta property="fb:app_id" content="1414002802233483">
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="6wglKOJZU4qZ69iblDH-ojLnQ7_sUv_0DDpe2N5t5MOMv0mNE6CQablABb0q8zbsziqPmaeD_UjnYB165zHtVw" />
+
+<link href='/favicon.ico' rel='icon' sizes='any'>
+<link href='/favicon.svg' rel='icon' type='image/svg+xml'>
+<link href='/apple-touch-icon.png' rel='apple-touch-icon'>
+<link href='/manifest.webmanifest' rel='manifest'>
+
+<meta content='b9d3902d34' name='verify-admitad'>
+
+<meta content='aa2vrdtq64dub8knuf83lwywit311w' name='facebook-domain-verification'>
+
+
+
+<link rel="stylesheet" href="/vite/assets/application-BonL7O59.css" />
+<script src="/vite/assets/application-DHUchmEq.js" crossorigin="anonymous" type="module"></script><link rel="modulepreload" href="/vite/assets/bootstrap.esm-BUrD0FjL.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/js.cookie-BhciSDFv.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/_commonjsHelpers-CIjs0f_q.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/configure-CX3adi5h.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/gon-DapAWets.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/autocomplete-CTGjshY-.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/routes-D4V5fzVg.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/createPopper-B17Z5m76.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/dayjs.min-natoSLVX.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/index-6E5aSw7q.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/debounce-pBMka28D.js" as="script" crossorigin="anonymous"><link rel="stylesheet" href="/vite/assets/application-BonL7O59.css" media="screen" />
+<script>
+//<![CDATA[
+(function() {
+  const options = {
+    dsn: 'https://d9665b39f594bfd43e2ad3b09863df18@sentry.hexlet.io/5',
+    environment: 'production',
+    release: 'v9860',
+    initialScope: {
+      user: gon.current_user
+    },
+    ignoreErrors: [
+      'top.GLOBALS', // Random plugins/extensions
+      'VK is',
+      'VK.Retargeting is ',
+      "Can't find variable: VK",
+      'pktAnnotationHighlighter',
+      'amplitude',
+      'google_tag_manager',
+      'Unexpected keyword',
+      'illegal character',
+      'Unexpected identifier',
+      'Illegal invocation',
+      'missing = in const declaration',
+      'Loading chunk 692 failed',
+      'Non-Error promise rejection captured with keys: code, status',
+    ],
+    allowUrls: [/https?:\/\/((cdn|cdn2|ru)\.)?hexlet.io/],
+    beforeSend(event, hint) {
+      const stack = hint?.originalException?.stack || '';
+      const errorInitiator = stack
+        .split('\n')
+        .map((line) => line.trim())
+        .find((line) => line.startsWith('at'));
+      const causedByConsole = errorInitiator
+        ? errorInitiator.includes('<anonymous>:')
+        : false;
+      return causedByConsole ? null : event;
+    },
+  };
+  const key = options.dsn.replace('https://', '').split('@')[0];
+
+  !function(n,e,r,t,o,i,a,c,s){for(var u=s,f=0;f<document.scripts.length;f++)if(document.scripts[f].src.indexOf(i)>-1){u&&"no"===document.scripts[f].getAttribute("data-lazy")&&(u=!1);break}var p=[];function l(n){return"e"in n}function d(n){return"p"in n}function _(n){return"f"in n}var v=[];function y(n){u&&(l(n)||d(n)||_(n)&&n.f.indexOf("capture")>-1||_(n)&&n.f.indexOf("showReportDialog")>-1)&&L(),v.push(n)}function h(){y({e:[].slice.call(arguments)})}function g(n){y({p:n})}function E(){try{n.SENTRY_SDK_SOURCE="loader";var e=n[o],i=e.init;e.init=function(o){n.removeEventListener(r,h),n.removeEventListener(t,g);var a=c;for(var s in o)Object.prototype.hasOwnProperty.call(o,s)&&(a[s]=o[s]);!function(n,e){var r=n.integrations||[];if(!Array.isArray(r))return;var t=r.map((function(n){return n.name}));n.tracesSampleRate&&-1===t.indexOf("BrowserTracing")&&(e.browserTracingIntegration?r.push(e.browserTracingIntegration({enableInp:!0})):e.BrowserTracing&&r.push(new e.BrowserTracing));(n.replaysSessionSampleRate||n.replaysOnErrorSampleRate)&&-1===t.indexOf("Replay")&&(e.replayIntegration?r.push(e.replayIntegration()):e.Replay&&r.push(new e.Replay));n.integrations=r}(a,e),i(a)},setTimeout((function(){return function(e){try{"function"==typeof n.sentryOnLoad&&(n.sentryOnLoad(),n.sentryOnLoad=void 0)}catch(n){console.error("Error while calling `sentryOnLoad` handler:"),console.error(n)}try{for(var r=0;r<p.length;r++)"function"==typeof p[r]&&p[r]();p.splice(0);for(r=0;r<v.length;r++){_(i=v[r])&&"init"===i.f&&e.init.apply(e,i.a)}m()||e.init();var t=n.onerror,o=n.onunhandledrejection;for(r=0;r<v.length;r++){var i;if(_(i=v[r])){if("init"===i.f)continue;e[i.f].apply(e,i.a)}else l(i)&&t?t.apply(n,i.e):d(i)&&o&&o.apply(n,[i.p])}}catch(n){console.error(n)}}(e)}))}catch(n){console.error(n)}}var O=!1;function L(){if(!O){O=!0;var n=e.scripts[0],r=e.createElement("script");r.src=a,r.crossOrigin="anonymous",r.addEventListener("load",E,{once:!0,passive:!0}),n.parentNode.insertBefore(r,n)}}function m(){var e=n.__SENTRY__,r=void 0!==e&&e.version;return r?!!e[r]:!(void 0===e||!e.hub||!e.hub.getClient())}n[o]=n[o]||{},n[o].onLoad=function(n){m()?n():p.push(n)},n[o].forceLoad=function(){setTimeout((function(){L()}))},["init","addBreadcrumb","captureMessage","captureException","captureEvent","configureScope","withScope","showReportDialog"].forEach((function(e){n[o][e]=function(){y({f:e,a:arguments})}})),n.addEventListener(r,h),n.addEventListener(t,g),u||setTimeout((function(){L()}))}(window,document,"error","unhandledrejection","Sentry",key,'https://browser.sentry-cdn.com/8.55.0/bundle.min.js',options,true);
+})();
+
+
+
+//]]>
+</script>
+<script>
+  window._ab_id_ = 149482
+</script>
+<script async src='https://cdn.botfaqtor.ru/one.js'></script>
+
+<script>
+//<![CDATA[
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();
+  for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+  k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+ym(25559621, "init", {
+  clickmap:true,
+  trackLinks:true,
+  accurateTrackBounce:true,
+  webvisor:true
+});
+
+ym(25559621, 'getClientID', function(clientID) {
+  window.ymClientId = clientID
+});
+
+
+
+//]]>
+</script><noscript>
+<div>
+<img alt='' src='https://mc.yandex.ru/watch/25559621' style='position:absolute; left:-9999px;'>
+</div>
+</noscript>
+
+<script src="/vite/assets/analytic_events-nV1VM8Qc.js" crossorigin="anonymous" type="module"></script>
+<script>
+//<![CDATA[
+window.EventsMapping = {
+  on: function(eventName, callback) {
+    if (gon.events.length === 0) {
+      return;
+    }
+
+    if (gon.events.indexOf(eventName) === -1) {
+      throw new Error('Undefined event name ' + eventName + '. Check gon.events.');
+    }
+
+    if (!gon.fired_events.hasOwnProperty(eventName)) {
+      return;
+    }
+    var options = gon.fired_events[eventName];
+
+    callback(eventName, options);
+  }
+};
+
+//]]>
+</script>
+<!-- Google Tag Manager -->
+<script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WK88TH');
+</script>
+<!-- End Google Tag Manager -->
+
+<script>
+//<![CDATA[
+!function(){
+  const loadRenta = function() {
+    var i="renta",renta=window[i]=window[i]||[];if(!renta.initialize){if(renta.invoked){window.console&&console.error&&console.error("Renta SDK snippet included twice.");}else{renta.invoked=true;renta.methods=["identify","group","track","page"];renta.factory=function(method){return function(){if(window[i].initialized)return window[i][method].apply(window[i],arguments);var args=Array.prototype.slice.call(arguments);args.unshift(method);renta.push(args);return renta;};};for(var n=0;n<renta.methods.length;n++){var key=renta.methods[n];renta[key]=renta.factory(key);}renta.environment=function(env){renta.env=env;};renta.load=function(key,domain){renta.writeKey=key;renta.collectURL=domain||'cdp.renta.im';var script=document.createElement("script");script.type="text/javascript";script.async=true;script.src="https://"+renta.collectURL+"/collect/v2/renta.min.js";var first=document.getElementsByTagName("script")[0];first.parentNode.insertBefore(script,first);};renta.SNIPPET_VERSION="2.1";
+      renta.load('45dec37f43fa49e392061da423f072ca', "collect-analytics.hexlet.io");
+      renta.page();
+
+      window.EventsMapping.on('signed_up', function() {
+        var user = gon.current_user;
+
+        renta.identify(user.id.toString(), {
+          email: user.email,
+          first_name: user.first_name,
+          last_name: user.last_name,
+          public_name: user.public_name,
+          city: user.city ? user.city.title : null,
+          birthday: user.birthday,
+          sanitized_phone_number: user.sanitized_phone_number,
+          locale: user.locale,
+          url: user.url
+        });
+      });
+
+      window.EventsMapping.on('signed_in', function() {
+        var user = gon.current_user;
+
+        renta.identify(user.id.toString(), {
+          email: user.email,
+          first_name: user.first_name,
+          last_name: user.last_name,
+          public_name: user.public_name,
+          city: user.city ? user.city.title : null,
+          birthday: user.birthday,
+          sanitized_phone_number: user.sanitized_phone_number,
+          locale: user.locale,
+          url: user.url
+        });
+      });
+    }}
+  }
+  document.addEventListener('DOMContentLoaded', () => setTimeout(loadRenta, 950));
+}();
+
+
+//]]>
+</script>
+<script src="/vite/assets/carrotquest_script-Bq48J79e.js" crossorigin="anonymous" type="module" defer="defer"></script>
+<script src="/vite/assets/carrotquest_tracking-mq00MlLW.js" crossorigin="anonymous" type="module" defer="defer"></script><link rel="modulepreload" href="/vite/assets/js.cookie-BhciSDFv.js" as="script" crossorigin="anonymous" defer="defer">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Hexlet","url":"https://ru.hexlet.io/","sameAs":["https://www.facebook.com/Hexlet","https://www.youtube.com/user/HexletUniversity","https://twitter.com/HexletHQ","https://soundcloud.com/hexlet"],"legalName":"ООО «Хекслет Рус»","address":"108813, г. Москва, вн.тер.г. поселение Московский, г. Московский, ул. Солнечная, д. 3А, стр. 1, помещ. 10/3","telephone":"+7 495 085 21 62","logo":{"@type":"ImageObject","url":"https://ru.hexlet.io/images/hexlet_logo.png"}}</script>
+
+
+
+</head>
+<body class='h-100'>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+<iframe height='0' src='https://www.googletagmanager.com/ns.html?id=GTM-WK88TH' style='display:none;visibility:hidden' width='0'></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","isAccessibleForFree":true,"headline":"Базовая структура HTML документа","datePublished":"2020-07-30T13:19:05.377+03:00","dateModified":"2025-08-06T21:11:20.902+03:00","image":"https://ru.hexlet.io/images/hexlet_logo.png","publisher":{"@context":"https://schema.org","@type":"Organization","name":"Hexlet","url":"https://ru.hexlet.io/","sameAs":["https://www.facebook.com/Hexlet","https://www.youtube.com/user/HexletUniversity","https://twitter.com/HexletHQ","https://soundcloud.com/hexlet"],"legalName":"ООО «Хекслет Рус»","address":"108813, г. Москва, вн.тер.г. поселение Московский, г. Московский, ул. Солнечная, д. 3А, стр. 1, помещ. 10/3","telephone":"+7 495 085 21 62","logo":{"@type":"ImageObject","url":"https://ru.hexlet.io/images/hexlet_logo.png"}},"hasPart":{"@type":"WebPageElement","isAccessibleForFree":true,"cssSelector":".paywall"},"video":{"@type":"VideoObject","embedUrl":"//player.vimeo.com/video/758735509?h=","name":"Базовая структура HTML документа","description":"Любой HTML-документ имеет базовую структуру, состоящую из тегов и служебных элементов. Они нужны браузеру для корректного отображения информации. В данном уроке разберемся с каждой строчкой этой структуры","uploadDate":"2025-08-06T21:11:20.902+03:00","thumbnailUrl":"https://ru.hexlet.io/images/hexlet_logo.png"}}</script>
+<div class='d-flex flex-column flex-md-row h-100 d-print-inline'>
+<div class='border-end flex-fill tab-content d-print-inline h-100 overflow-hidden'>
+<div aria-labelledby='lesson-tab' class='tab-pane fade show active d-print-inline h-100 overflow-auto position-relative' id='lesson' role='tabpanel'>
+<div class='container-xl my-3 mb-md-4 mb-lg-5'>
+<div class='row justify-content-center'>
+<div class='col-12 col-lg-10 col-xl-9 col-xxl-8 mb-3'>
+<div class='paywall'>
+<article class='hexlet-typography overflow-hidden'>
+<div class='mb-4 position-relative d-inline-block'>
+<h1 class='my-0 d-flex flex-column-reverse'>
+Базовая структура HTML документа
+<span class='visually-hidden'>—</span>
+<span class='h6 mb-0 fw-normal text-body-secondary'>Основы современной верстки</span>
+</h1>
+<a class="stretched-link" aria-label="Основы современной верстки" href="/courses/layout-designer-basics"></a>
+</div>
+<div class='ratio ratio-16x9 mb-3'>
+<iframe allowFullScreen='true' allowscriptaccess='always' src='//player.vimeo.com/video/758735509?h='></iframe>
+</div>
+<div class='text-body-secondary small mb-3'>
+<div class='text-center'>Видео может быть заблокировано из-за расширений браузера. В <a target='_blank' rel='noopener noreferrer' href=https://help.hexlet.io/article/20658>статье</a> вы найдете решение этой проблемы.</div>
+</div>
+
+<!-- source_path[44658/410-page-structure/README.md] -->  
+<ul><li><a class="link-body-emphasis" href="#doctype">DOCTYPE</a></li>
+<li><a class="link-body-emphasis" href="#parnyy-teg-html">Парный тег html</a></li>
+<li><a class="link-body-emphasis" href="#parnyy-teg-head">Парный тег head</a><ul><li><a class="link-body-emphasis" href="#metainformatsiya">Метаинформация</a></li>
+<li><a class="link-body-emphasis" href="#zagolovok-stranitsy">Заголовок страницы</a></li></ul></li>
+<li><a class="link-body-emphasis" href="#telo-dokumenta">Тело документа</a></li></ul><p>Как театр начинается с вешалки, так и любой HTML-документ начинается с базовой структуры. Она включает в себя теги, которые есть в любом HTML-файле. Эти теги и служебная информация нужны браузеру для корректного отображения информации.</p><p>Взглянем на базовую структуру любого HTML-документа:</p><pre class="highlight hljs"><code class=html><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"ru"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Моя первая страница<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre><p>Этот набор кажется не очень большим, но браузеру он сообщает множество полезной информации. В этом уроке разберемся с каждой строчкой этой структуры.</p><h2 id="doctype">DOCTYPE</h2><p>Первая конструкция в любом HTML-документе — элемент <code>&lt;!DOCTYPE&gt;</code>. Он не относится к тегам и никаким образом не может отображаться на странице. Его задача — указать браузеру, какой стандарт HTML используется в этом документе. Сейчас это везде стандарт HTML5. Записывается он следующим образом:</p><pre class="highlight hljs"><code class=html><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</code></pre><p>С приходом стандарта HTML5 элемент <code>&lt;!DOCTYPE&gt;</code> немного упростился. Если вы встретитесь с сайтами, созданными пять или десять лет назад, то сможете увидеть совершенно другие записи. Они были больше и напрямую влияли на то, как браузер обработает информацию. Неправильное указание элемента <code>&lt;!DOCTYPE&gt;</code> могло привести к некорректному отображению. Сейчас такой проблемы нет, поэтому вы можете без всяких опасений использовать конструкцию, которая указана в данном уроке. Использование старых значений <code>&lt;!DOCTYPE&gt;</code> необходимо только при разработке с поддержкой очень старых браузеров.</p><h2 id="parnyy-teg-html">Парный тег html</h2><p>Тег <code>&lt;html&gt;&lt;/html&gt;</code> является основой основ. Именно внутри него располагается вся информация. Благодаря этому тегу браузер понимает, где начинается контент, который необходимо обработать как HTML.</p><p>Важной частью тега html является наличие атрибута <code>lang</code>. В нем указывается язык, на котором отображается веб-страница. С помощью этого атрибута браузеры могут корректно считать множество специфичных символов, которые присутствуют в разных языках. Помимо этого, атрибут <code>lang</code> начинает использоваться и в CSS, с которым вы познакомитесь в следующих уроках. В новых стандартах CSS появляются свойства, которые опираются на данный атрибут. Например, позволяют корректно переводить слова в тексте.</p><p>В качестве значения атрибут <code>lang</code> принимает знакомые всем коды языков. Для русского — <code>lang=&quot;ru&quot;</code>, для английского — <code>lang=&quot;en&quot;</code>, для немецкого — <code>lang=&quot;de&quot;</code>.</p><h2 id="parnyy-teg-head">Парный тег head</h2><p>Тег <code>&lt;head&gt;&lt;/head&gt;</code> служит для хранения служебной информации. Здесь возможны самые разные сочетания тегов, которые подсказывают браузеру название страницы, описание, ключевые слова и так далее. Такая информация называется <em>метаинформацией</em>. В современном вебе она отвечает не только за служебную информацию для браузера, но и активно используется при продвижении сайта. Поисковые системы считывают всю эту информацию и на основе множества алгоритмов определяют место сайта при разных поисковых запросах.</p><p>Любые данные, которые указаны внутри тега <code>&lt;head&gt;</code>, не видны при отображении страницы в браузере. Это значит, что нет необходимости располагать там информацию, которая предназначена для отображения.</p><p>Хоть различной информации внутри <code>&lt;head&gt;</code> может быть множество, в этом уроке разберем несколько основных тегов, которые пригодятся при создании любой веб-страницы:</p><h3 id="metainformatsiya">Метаинформация</h3><p>Метатег <code>&lt;meta&gt;</code>. Он принимает множество разных атрибутов, с которыми вы познакомитесь при создании своих сайтов. В настоящее время важным является метатег <code>&lt;meta&gt;</code> с атрибутом <code>charset</code>. Он позволяет установить кодировку документа.</p><p>Кодировка — таблица символов. В ней каждый символ имеет уникальный код, благодаря чему программы, в том числе и браузеры, могут одинаково отображать один и тот же текст. У разных пользователей может стоять различная кодировка по умолчанию. Это приводит к тому, что у некоторых пользователей текст может отображаться в виде «кракозябр», хотя у вас он будет отображаться правильно. Универсальной кодировкой, которая содержит большинство необходимых символов из разных языков, является кодировка <code>UTF-8</code>. Именно ее рекомендуется устанавливать в качестве значения атрибута <code>charset</code>. Теперь браузер будет отображать все символы именно в этой кодировке.</p><pre class="highlight hljs"><code class=html><span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+</code></pre><h3 id="zagolovok-stranitsy">Заголовок страницы</h3><p>На любом веб-сайте вы можете заметить заголовок, который отображается на вкладке вашего браузера. Например, на странице курса «Основы современной верстки» вкладка в браузере Google Chrome выглядит следующим образом:</p><p><img src="/derivations/image/original/eyJpZCI6ImNkMDhhOTBjYzBmYmYxYTZmMDIyYTQ1ZmNlZWY1Y2NhLnBuZyIsInN0b3JhZ2UiOiJjYWNoZSJ9?signature=1bf79e5ed7544bdfe70063309f0283e17efde0c923fa9d88cfbd85be19190703" title="" alt="«Основа современной верстки» вкладка в браузере Google Chrome"  class="px-2 px-md-3 px-lg-4 px-xl-5 img-fluid" loading="lazy"></p><p>Для указания заголовка страницы используется специальный парный тег <code>&lt;title&gt;&lt;/title&gt;</code>, внутри которого указывается нужная информация.</p><pre class="highlight hljs"><code class=html><span class="nt">&lt;title&gt;</span>Моя первая страница<span class="nt">&lt;/title&gt;</span>
+</code></pre><h2 id="telo-dokumenta">Тело документа</h2><p>После тега <code>&lt;head&gt;</code> в документе указывается парный тег <code>&lt;body&gt;&lt;/body&gt;</code>, который является «телом» всей страницы. Именно здесь размещается вся информация, которая будет выведена на странице.</p><p><img src="/derivations/image/original/eyJpZCI6IjA0ZmI3NjBhMmMwOTM1ZjhjYzdmNTkxZmFiNTkzNzI5LnBuZyIsInN0b3JhZ2UiOiJjYWNoZSJ9?signature=b85a7199e4119a18fa29881eae4c9f9718fb0a98b0c3ac743aab6fcff426bb23" title="" alt="Голова и тело документа"  class="px-2 px-md-3 px-lg-4 px-xl-5 img-fluid" loading="lazy"></p><p>Используем один из примеров прошлого урока и добавим все недостающие теги.</p><pre class="highlight hljs"><code class=html><span class="nt">&lt;header&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/logo.png"</span> <span class="na">alt=</span><span class="s">"Логотип"</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- Логотип сайта --&gt;</span>
+  <span class="nt">&lt;nav</span> <span class="na">id=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- Меню --&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/"</span><span class="nt">&gt;</span>Главная<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/about"</span><span class="nt">&gt;</span>О нас<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/contacts"</span><span class="nt">&gt;</span>Контакты<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/nav&gt;</span>
+<span class="nt">&lt;/header&gt;</span>
+</code></pre><p>Чтобы полностью соответствовать всем стандартам HTML, добавим необходимую базовую структуру документа.</p><pre class="highlight hljs"><code class=html><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"ru"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Моя первая страница<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;header&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/logo.png"</span> <span class="na">alt=</span><span class="s">"Логотип"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- Логотип сайта --&gt;</span>
+      <span class="nt">&lt;nav</span> <span class="na">id=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
+        <span class="c">&lt;!-- Меню --&gt;</span>
+        <span class="nt">&lt;ul&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/"</span><span class="nt">&gt;</span>Главная<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/about"</span><span class="nt">&gt;</span>О нас<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/contacts"</span><span class="nt">&gt;</span>Контакты<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;/nav&gt;</span>
+    <span class="nt">&lt;/header&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre><p>Хоть данный набор и является основным, но на самом деле браузеры могут обработать HTML-информацию и без базовой структуры документа. Но не стоит отдавать все на откуп браузеру. Он постарается автоматически обернуть контент в <code>&lt;body&gt;</code>, добавит современный <code>&lt;!DOCTYPE&gt;</code>. Но при этом нет уверенности в том, что все это он добавит корректно.</p>
+<hr class='my-5'>
+<h4 class='mb-4'>Самостоятельная работа</h4>
+<!-- source_path[44658/410-page-structure/self_study.md] -->  
+<p>Создайте базовую структуру документа и попробуйте разные варианты текста внутри тега <code>&lt;title&gt;</code>. Можете попробовать добавить туда даже эмодзи и посмотреть, как браузер выведет такой заголовок</p>
+<hr class='my-5'>
+<h4 class='mb-4'>Дополнительные материалы</h4>
+<ol>
+<li>
+<a target="_blank" rel="noopener nofollow" class="text-decoration-none" href="https://guides.hexlet.io/ru/encoding/">Что такое кодировки</a>
+</li>
+</ol>
+</article>
+<div class='mt-5 d-none d-md-flex'>
+<div class='ms-auto'>
+<form class="button_to" method="post" action="/courses/layout-designer-basics/lessons/page-structure/finish_unit?unit=theory"><input type="hidden" name="_method" value="patch" autocomplete="off" /><button data-html="true" data-disable-with="<span class=&quot;spinner-border spinner-border-sm&quot; role=&quot;status&quot; aria-hidden=&quot;true&quot;></span><span class=&quot;d-none d-md-inline&quot;>&nbsp;Подождите...</span>
+" aria-expanded="false" class="btn btn-outline-primary btn-lg d-flex align-items-center" id="finish-theory-button" type="submit"><span class='me-3'>Далее</span>
+<span class='bi bi-arrow-right'></span>
+</button><input type="hidden" name="authenticity_token" value="hHKNhNTBzs8Y0zds_NTS3MAN2rxChVLLlj2hdvltY5Msl7DfUt7SWGA4ljlMKQxc4Tbmn5JZX6BF6XdO6F-qsQ" autocomplete="off" /></form></div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div aria-labelledby='community-tab' class='tab-pane fade overflow-auto h-100 position-relative' id='community' role='tabpanel'>
+<div class='container-xl mt-3 mt-md-4 mt-lg-5'>
+<div class='row justify-content-center'>
+<div class='col-12 col-lg-10 col-xl-9 col-xxl-8'>
+<div class='text-center mb-5'>
+<p class='lead text-body-secondary fw-normal'>Если хотите обсудить теорию или упражнения, задавайте вопросы в <a href="https://ttttt.me/HexletLearningBot" target="_blank">Telegram-сообществе Хекслета</a>. Опытные участники и команда поддержки помогут вам найти ответы и разобраться с задачей.</p>
+</div>
+<div id='community-box'></div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<aside class='hexlet-lesson-sidebar flex-shrink-0 overflow-auto d-print-none'>
+<div class='row g-0 flex-fill flex-sm-row-reverse flex-md-row'>
+<div class='col-auto d-sm-none'>
+<button class='btn btn-secondary btn-lg rounded-0' data-bs-target='#theory-external-content' data-bs-toggle='collapse'>
+<span class='bi bi-list-ul'></span>
+<span class='visually-hidden'>Меню</span>
+</button>
+</div>
+<div class='col col-sm-4 col-md-12 overflow-hidden'>
+<form class="h-100" method="post" action="/courses/layout-designer-basics/lessons/page-structure/finish_unit?unit=theory"><input type="hidden" name="_method" value="patch" autocomplete="off" /><button data-disable-with="<span class=&quot;spinner-border spinner-border-sm&quot; role=&quot;status&quot; aria-hidden=&quot;true&quot;></span><span class=&quot;d-none d-md-inline&quot;>&nbsp;Подождите...</span>
+" aria-expanded="false" data-html="true" class="btn btn-primary btn-lg w-100 h-100 d-md-flex align-items-md-center justify-content-md-between x-btn-no-active-decor rounded-0" id="finish-button" type="submit"><span class='me-2'>Далее</span>
+<span class='bi bi-arrow-right'></span>
+</button><input type="hidden" name="authenticity_token" value="mmHCIH8GOKk857OVCL9OkZYCPI1eX2AnhvEG8ATURfsyhP97-RkkPkQMEsC4QpARtzkAro6DbUxVJdDIFeaM2Q" autocomplete="off" /></form></div>
+<div class='col-12 col-sm-8 col-md-12 d-sm-block collapse' id='theory-external-content'>
+<div class='d-flex flex-wrap h-100'>
+<div class='d-none d-md-flex align-items-center w-100 border-top'>
+<a class="btn btn-link btn-lg rounded-0 text-body border-end" title="Мое обучение" href="/my"><span class='bi bi-house-door'></span>
+</a><a data-bs-toggle="modal" data-bs-target="#coursenav-modal" class="btn btn-link btn-lg rounded-0 text-decoration-none text-body w-100 border-left" href="#coursenav-modal"><span class='small'>Навигация</span>
+</a></div>
+<div class='d-none d-md-block w-100 px-2 py-3 border-top'>
+<div class='small text-center mb-2'>
+пройдено 4 урока из 12
+</div>
+<div class='px-1'>
+<div class='progress mb-1'>
+<div class='progress-bar m-0 bg-success' style='width: 34%'></div>
+</div>
+</div>
+</div>
+<nav class='nav flex-row-reverse flex-md-column nav-justified flex-fill flex-nowrap border-top pt-md-2'>
+<ul class='nav flex-grow-1 col-auto d-md-none'>
+<li class='nav-item'>
+<a data-bs-toggle="modal" data-bs-target="#coursenav-modal" class="nav-link text-body px-2 py-3" href="#coursenav-modal"><span class='bi bi-diagram-3-fill'></span>
+</a></li>
+<li class='nav-item'>
+<a class="nav-link text-body px-2 py-3" href="/my"><span class='bi bi-house-door'></span>
+</a></li>
+</ul>
+<ul class='nav flex-grow-1 flex-row-reverse flex-md-column col-auto' role='tablist'>
+<li class='nav-item text-md-start'>
+<a class="nav-link hexlet-base-nav-item active text-body px-2 px-md-3 py-3 py-md-2" role="tab" aria-controls="lesson" aria-selected="true" data-bs-toggle="tab" href="#lesson"><span class='d-none d-md-inline-block'>Теория</span>
+<span class='bi bi-body-text d-md-none'></span>
+</a></li>
+<li class='nav-item text-md-start'>
+<a class="root-assistant-btn nav-link hexlet-base-nav-item text-body px-2 px-md-3 py-3 py-md-2" role="tab" aria-controls="assistant" aria-selected="false" href="#assistant"><span class='d-none d-md-inline-block'>ИИ-помощник</span>
+<span class='bi bi-robot d-md-none'></span>
+</a></li>
+<li class='nav-item text-md-start'>
+<a class="nav-link hexlet-base-nav-item text-body px-2 px-md-3 py-3 py-md-2" role="tab" aria-controls="community" aria-selected="false" data-bs-toggle="tab" data-bs-target="#community" href="/courses/layout-designer-basics/lessons/page-structure/theory_unit#community"><span class='d-none d-md-inline-block'>Обсуждение</span>
+<span class='bi bi-chat d-md-none'></span>
+</a></li>
+</ul>
+</nav>
+
+</div>
+
+</div>
+</div>
 </aside>
+<div id='lead-form'></div>
+</div>
+<div aria-hidden='true' aria-labelledby='coursenav-modal' class='modal fade' id='coursenav-modal' role='dialog' tabindex='-1'>
+<div class='modal-dialog'>
+<div class='modal-content'>
+<div class='modal-header'>
+<h6 class='modal-title'>
+<nav aria-label='breadcrumb' style='--bs-breadcrumb-divider: &#39;•&#39;;'>
+<ol class='breadcrumb mb-0' itemscope='' itemtype='https://schema.org/BreadcrumbList'>
+<li class='breadcrumb-item' itemprop='itemListElement' itemscope='' itemtype='https://schema.org/ListItem'>
+<a class="text-body opacity-75 text-decoration-none" itemprop="item" href="/"><span itemprop="name">Хекслет</span></a>
+<meta content='1' itemprop='position'>
+</li>
+<li class='breadcrumb-item' itemprop='itemListElement' itemscope='' itemtype='https://schema.org/ListItem'>
+<a class="text-body opacity-75 text-decoration-none" itemprop="item" href="/courses/layout-designer-basics"><span itemprop="name">Основы современной верстки</span></a>
+<meta content='2' itemprop='position'>
+</li>
+<li class='breadcrumb-item' itemprop='itemListElement' itemscope='' itemtype='https://schema.org/ListItem'>
+<span itemprop="name">Базовая структура HTML документа</span>
+<meta content='3' itemprop='position'>
+</li>
+</ol>
+</nav>
 
-<main>
-  <h1>Хекслет — практические курсы по программированию</h1>
+</h6>
+<button aria-label='Закрыть' class='btn-close' data-bs-dismiss='modal'></button>
+</div>
+<div class='modal-body scrollable px-4'>
+<div class='mb-3'>
+<span class=''>
+1.
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/intro/theory_unit">Введение</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/intro/theory_unit">теория</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+2.
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/html-intro/theory_unit">Введение в HTML</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/html-intro/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/html-intro/quiz_unit">тесты</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+3.
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/block-model/theory_unit">Блочная модель</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/block-model/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/block-model/quiz_unit">тесты</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+4.
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/semantic-html/theory_unit">Семантический HTML</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/semantic-html/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/semantic-html/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class='text-decoration-line-through'>
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/semantic-html/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class='fw-bolder'>
+5.
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/page-structure/theory_unit">Базовая структура HTML документа</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class='fw-bolder'>
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/page-structure/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class=''>
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/page-structure/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class=''>
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/page-structure/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+6.
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/css-intro/theory_unit">Основы CSS</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class=''>
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/css-intro/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class=''>
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/css-intro/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class=''>
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/css-intro/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+7.
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/css-cascade/theory_unit">Каскадность в CSS</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class=''>
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/css-cascade/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class=''>
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/css-cascade/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class=''>
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/css-cascade/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+8.
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/devtools/theory_unit">Chrome DevTools</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class=''>
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/devtools/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class=''>
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/devtools/quiz_unit">тесты</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+9.
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/code-editors/theory_unit">Редакторы кода</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class=''>
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/code-editors/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class=''>
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/code-editors/quiz_unit">тесты</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+10.
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/emmet/theory_unit">Emmet</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class=''>
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/emmet/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class=''>
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/emmet/quiz_unit">тесты</a>
+</span>
+<span class='mx-1'>/</span>
+<span class=''>
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/emmet/exercise_unit">упражнение</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+11.
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/publication/theory_unit">Публикация в интернете</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class=''>
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/publication/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class=''>
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/publication/quiz_unit">тесты</a>
+</span>
+</span>
+</div>
+<div class='mb-3'>
+<span class=''>
+12.
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/graphics-editor/theory_unit">Графические редакторы</a>
+</span>
+<span class='small d-block'>
+<span class='me-2'>↳</span>
+<span class=''>
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/graphics-editor/theory_unit">теория</a>
+</span>
+<span class='mx-1'>/</span>
+<span class=''>
+<a class="text-decoration-none text-body" href="/courses/layout-designer-basics/lessons/graphics-editor/quiz_unit">тесты</a>
+</span>
+</span>
+</div>
+<div class='h6 fs-5 mt-4 mb-3'>Испытания</div>
+<div class='mb-3'>
+1.
+<span class=''>
+<a class="text-decoration-none text-body" href="/challenges/layout_designer_basics_table_exercise">Таблица</a>
+</span>
+</div>
+<div class='mb-3'>
+2.
+<span class=''>
+<a class="text-decoration-none text-body" href="/challenges/layout_designer_basics_profile_cards_exercise">Карточки профилей</a>
+</span>
+</div>
+<div class='mb-3'>
+3.
+<span class=''>
+<a class="text-decoration-none text-body" href="/challenges/layout_designer_basics_form_exercise">Форма регистрации</a>
+</span>
+</div>
+</div>
+<div class='modal-footer'>
+<button class='btn btn-outline-info' data-bs-dismiss='modal'>Закрыть</button>
+</div>
+</div>
+</div>
+</div>
 
-  <p>
-    Мы считаем, что настоящий программист должен понимать, как работает
-    компьютер, и обладать вычислительным мышлением. Он должен видеть проблему, а
-    не задание. Должен уметь анализировать и рассуждать на уровне проблемы и
-    выше, а не только на уровне кода.
-  </p>
-  <p>
-    При сегодняшнем обилии учебных материалов, курсов и книг, главный вопрос,
-    который встает перед новичком, это не «где учиться?», а «что и в каком
-    порядке учить?». Существует множество мнений по этому поводу. Кто-то
-    советует начинать с математики, кто-то советует конкретные языки и
-    технологии.
-  </p>
-  <p>
-    Хекслет — это готовый путь от абсолютного новичка до первого
-    трудоустройства.
-  </p>
+<div aria-hidden='true' class='modal fade' id='theory-tips-modal' tabindex='-1'>
+<div class='modal-dialog modal-lg'>
+<div class='modal-content px-2'>
+<div class='modal-header'>
+<h5 class='modal-title'>Поможем, если трудно</h5>
+<button aria-label='close' class='btn-close' data-bs-dismiss='modal' type='button'></button>
+</div>
+<div class='modal-body'>
+<p class='mb-3'>Порой обучение продвигается с трудом. Сложная теория, непонятные задания… Хочется бросить. Не сдавайтесь, все сложности можно преодолеть. Рассказываем, как</p>
+<div class='fw-bold mb-2'>Не понятна формулировка, нашли опечатку?</div>
+<div class='mb-3'>Выделите текст, нажмите <span class="badge bg-secondary text-white d-inline-block">ctrl + enter</span> и опишите проблему, затем отправьте нам. В течение нескольких дней мы улучшим формулировку или исправим опечатку</div>
+<div class='fw-bold mb-2'>Что-то не получается в уроке?</div>
+<p class='mb-0'><p class="mb-1">Загляните в раздел «Обсуждение»:</p>
+<ol class="mb-0"><li class="mb-1">Изучите вопросы, которые задавали по уроку другие студенты — возможно, ответ на ваш уже есть</li><li class="mb-1">Если вопросы остались, задайте свой. Расскажите, что непонятно или сложно, дайте ссылку на ваше решение. Обратите внимание — команда поддержки не отвечает на вопросы по коду, но поможет разобраться с заданием или выводом тестов</li><li class="mb-1">Мы отвечаем на сообщения в течение 2-3 дней. К «Обсуждениям» могут подключаться и другие студенты. Возможно, получится решить вопрос быстрее!</li></ol>
+</p>
+<p class='mt-3 mb-0'><a href="https://help.hexlet.io/article/20552" target="_blank">Подробнее</a> о том, как задавать вопросы по уроку</p>
+</div>
+<div class='modal-footer'>
+<button class='btn btn-primary' data-bs-dismiss='modal' type='button'>
+Понятно
+</button>
+</div>
+</div>
+</div>
+</div>
 
-  <section>
-    <h2>Преимущества</h2>
 
-    <ul>
-      <li>Много теории</li>
-      <li>Много практики</li>
-      <li>Много менторов</li>
-    </ul>
-  </section>
+<div id='root-assistant-offcanvas'></div>
+<script src="/vite/assets/assistant-DbB4q1Y5.js" crossorigin="anonymous" type="module"></script><link rel="modulepreload" href="/vite/assets/configure-CX3adi5h.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/gon-DapAWets.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/index-BYS7QOCA.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/client-DEVOVK8q.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/ThemeProvider-d_MpQRsE.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/MarkdownBlock-uvBfVlM1.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/useTranslation-CgxV2HsL.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/index-CEaljGtw.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/useIsomorphicEffect-_Evr87HT.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/Col-COEAARBZ.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/Button-CaZ-mQWS.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/FallbackBlock-D8FYl8hw.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/index-6E5aSw7q.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/index-Crqv6W7Q.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/routes-D4V5fzVg.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/debounce-pBMka28D.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/querySelectorAll-DvOk5aGn.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/AbstractModalHeader-Dl3tXydK.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/divWithClassName-CL8fQxz5.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/dayjs.min-natoSLVX.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/_commonjsHelpers-CIjs0f_q.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/Typography-C8QNkgzW.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/index-FuXtUO9m.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/index-DZqPDXth.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/index-Cx-_2caT.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/Button-CzbTgFIg.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/exports-DXC8lKpg.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/clsx-BQl7apKL.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/useEventCallback-CqKi2MtX.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/objectWithoutPropertiesLoose-DSA0HKaL.js" as="script" crossorigin="anonymous">
+<script src="/vite/assets/community-Bd6b6RHG.js" crossorigin="anonymous" type="module"></script><link rel="modulepreload" href="/vite/assets/index-BYS7QOCA.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/client-DEVOVK8q.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/index-Bo6Ujen3.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/configure-CX3adi5h.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/index-6E5aSw7q.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/routes-D4V5fzVg.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/ThemeProvider-d_MpQRsE.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/Anchor-DiSPUxB8.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/MarkdownViewer-D-PhnNcf.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/useTranslation-CgxV2HsL.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/Card-C5IDqEzT.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/gon-DapAWets.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/_commonjsHelpers-CIjs0f_q.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/clsx-BQl7apKL.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/dayjs.min-natoSLVX.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/useEventCallback-CqKi2MtX.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/Button-CzbTgFIg.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/index-FuXtUO9m.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/index-DZqPDXth.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/index-Cx-_2caT.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/index-BxXcBDKt.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="/vite/assets/divWithClassName-CL8fQxz5.js" as="script" crossorigin="anonymous"><link rel="stylesheet" href="/vite/assets/community-BHB9tnea.css" media="screen" />
 
-  <section>
-    <h2>Новости</h2>
 
-    <article>
-      <h3>Новость 1</h3>
-      <p>Текст новости 1</p>
-      <a href="#">Подробнее</a>
-    </article>
-
-    <article>
-      <h3>Новость 2</h3>
-      <p>Текст новости 2</p>
-      <a href="#">Подробнее</a>
-    </article>
-
-    <article>
-      <h3>Новость 3</h3>
-      <p>Текст новости 3</p>
-      <a href="#">Подробнее</a>
-    </article>
-  </section>
-</main>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"9707cbcf58c6845a","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.8.0","token":"d11015b65d11429ea6b4a2ef37dd7e0b"}' crossorigin="anonymous"></script>
+</body>
+</html>
