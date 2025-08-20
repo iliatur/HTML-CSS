@@ -15,3 +15,7 @@
 textarea.form-input {
   height: 200px;
 }
+
+  .absolute {
+    position: absolute;
+  }
